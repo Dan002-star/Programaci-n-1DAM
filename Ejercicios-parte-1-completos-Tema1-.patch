@@ -1,0 +1,565 @@
+From c5c9c964a749a7332313c444ea24227a0be7e4dc Mon, 28 Sep 2026 13:51:14 +0200
+From: dania.carmona <dania.carmona@106-26.info2.lan>
+Date: Mon, 28 Sep 2026 13:33:20 +0200
+Subject: [PATCH] Ejercicios parte 1 completos (Tema1). :)
+
+diff --git a/U1EjerciciosParte1/.classpath b/U1EjerciciosParte1/.classpath
+new file mode 100644
+index 0000000..4e3c4e0
+--- /dev/null
++++ b/U1EjerciciosParte1/.classpath
+@@ -0,0 +1,10 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<classpath>
++	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-25">
++		<attributes>
++			<attribute name="module" value="true"/>
++		</attributes>
++	</classpathentry>
++	<classpathentry kind="src" path="src"/>
++	<classpathentry kind="output" path="bin"/>
++</classpath>
+diff --git a/U1EjerciciosParte1/.gitignore b/U1EjerciciosParte1/.gitignore
+new file mode 100644
+index 0000000..ae3c172
+--- /dev/null
++++ b/U1EjerciciosParte1/.gitignore
+@@ -0,0 +1 @@
++/bin/
+diff --git a/U1EjerciciosParte1/.project b/U1EjerciciosParte1/.project
+new file mode 100644
+index 0000000..57712b0
+--- /dev/null
++++ b/U1EjerciciosParte1/.project
+@@ -0,0 +1,17 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<projectDescription>
++	<name>U1TEMA1EjerciciosParte1</name>
++	<comment></comment>
++	<projects>
++	</projects>
++	<buildSpec>
++		<buildCommand>
++			<name>org.eclipse.jdt.core.javabuilder</name>
++			<arguments>
++			</arguments>
++		</buildCommand>
++	</buildSpec>
++	<natures>
++		<nature>org.eclipse.jdt.core.javanature</nature>
++	</natures>
++</projectDescription>
+diff --git a/U1EjerciciosParte1/.settings/org.eclipse.core.resources.prefs b/U1EjerciciosParte1/.settings/org.eclipse.core.resources.prefs
+new file mode 100644
+index 0000000..4824b80
+--- /dev/null
++++ b/U1EjerciciosParte1/.settings/org.eclipse.core.resources.prefs
+@@ -0,0 +1,2 @@
++eclipse.preferences.version=1
++encoding/<project>=UTF-8
+diff --git a/U1EjerciciosParte1/.settings/org.eclipse.jdt.core.prefs b/U1EjerciciosParte1/.settings/org.eclipse.jdt.core.prefs
+new file mode 100644
+index 0000000..f46416b
+--- /dev/null
++++ b/U1EjerciciosParte1/.settings/org.eclipse.jdt.core.prefs
+@@ -0,0 +1,11 @@
++eclipse.preferences.version=1
++org.eclipse.jdt.core.compiler.codegen.targetPlatform=25
++org.eclipse.jdt.core.compiler.codegen.unusedLocal=preserve
++org.eclipse.jdt.core.compiler.compliance=25
++org.eclipse.jdt.core.compiler.debug.lineNumber=generate
++org.eclipse.jdt.core.compiler.debug.localVariable=generate
++org.eclipse.jdt.core.compiler.debug.sourceFile=generate
++org.eclipse.jdt.core.compiler.problem.enablePreviewFeatures=disabled
++org.eclipse.jdt.core.compiler.problem.reportPreviewFeatures=warning
++org.eclipse.jdt.core.compiler.release=enabled
++org.eclipse.jdt.core.compiler.source=25
+diff --git a/U1EjerciciosParte1/src/ejercicio1/Ej1.java b/U1EjerciciosParte1/src/ejercicio1/Ej1.java
+new file mode 100644
+index 0000000..3a14deb
+--- /dev/null
++++ b/U1EjerciciosParte1/src/ejercicio1/Ej1.java
+@@ -0,0 +1,18 @@
++package ejercicio1;
++
++import java.util.Scanner;
++
++public class Ej1 {
++public static void main(String[] args) {
++		
++		int numero;
++		Scanner sc = new Scanner(System.in);
++		System.err.println("Introduce un número: ");
++		
++		 
++		numero = sc.nextInt();
++		
++		sc.close();
++		
++	}
++}
+diff --git a/U1EjerciciosParte1/src/ejercicio10/Ej10.java b/U1EjerciciosParte1/src/ejercicio10/Ej10.java
+new file mode 100644
+index 0000000..8e71a30
+--- /dev/null
++++ b/U1EjerciciosParte1/src/ejercicio10/Ej10.java
+@@ -0,0 +1,18 @@
++package ejercicio10;
++import java.util.Scanner;
++public class Ej10 {
++public static void main(String[] args) {
++	Scanner sc = new Scanner(System.in);
++	
++	System.out.println("Introduce un número: ");
++	
++	int num = sc.nextInt();
++	Boolean par = (num % 2 ==0);
++	
++		System.out.println("El número es par: " + par);
++
++	sc.close();
++	}
++	
++	
++}
+diff --git a/U1EjerciciosParte1/src/ejercicio11/Ej11.java b/U1EjerciciosParte1/src/ejercicio11/Ej11.java
+new file mode 100644
+index 0000000..6e4aaf5
+--- /dev/null
++++ b/U1EjerciciosParte1/src/ejercicio11/Ej11.java
+@@ -0,0 +1,21 @@
++package ejercicio11;
++import java.util.Scanner;
++public class Ej11 {
++	public static void main(String[] args) {
++	Scanner sc = new Scanner(System.in);
++	int cant = 166;
++	System.out.println("Introduce una cantidad de pesetas: ");	
++	
++	int ptas = sc.nextInt();
++	int eur = ptas / cant;
++	
++	 
++	
++	System.out.println(ptas + " pesetas equivale a " + eur + " €");
++	
++	sc.close();	
++	}
++	
++	
++
++}
+diff --git a/U1EjerciciosParte1/src/ejercicio12/Ej12.java b/U1EjerciciosParte1/src/ejercicio12/Ej12.java
+new file mode 100644
+index 0000000..db4200a
+--- /dev/null
++++ b/U1EjerciciosParte1/src/ejercicio12/Ej12.java
+@@ -0,0 +1,22 @@
++package ejercicio12;
++
++import java.util.Scanner;
++
++public class Ej12 {
++	public static void main(String[] args) {
++		Scanner sc = new Scanner(System.in);
++	double mank = 2.35;
++	double perk = 1.95;
++		System.out.println("Introduce la cantidad de manzanas: ");
++		double man =sc.nextInt();
++		
++		System.out.println("Introduce la cantidad de peras: ");
++		double per =sc.nextInt();
++		
++		double resultado = (man * mank)+ (per * perk)*365;
++		
++		System.out.println("En un año obtendras " + resultado + " € en fruta.");
++		sc.close();
++	}
++
++}
+diff --git a/U1EjerciciosParte1/src/ejercicio13/Ej13.java b/U1EjerciciosParte1/src/ejercicio13/Ej13.java
+new file mode 100644
+index 0000000..dc0cc1d
+--- /dev/null
++++ b/U1EjerciciosParte1/src/ejercicio13/Ej13.java
+@@ -0,0 +1,28 @@
++package ejercicio13;
++
++import java.util.Scanner;
++public class Ej13 {
++public static void main(String[] args) {
++	Scanner sc = new Scanner(System.in);
++	
++	System.out.println("¿Has terminado tus deberes? ");
++Boolean deberes = sc.nextBoolean();	
++
++	System.out.println("¿Está lloviendo?");
++Boolean lluvia = sc.nextBoolean();
++	
++	System.out.println("¿Tienes que ir a la biblioteca?");
++Boolean biblioteca = sc.nextBoolean();
++ 
++
++System.out.println("Deberes?-->" + lluvia);
++System.out.println("Deberes?-->" + deberes);
++System.out.println("Deberes?-->" + biblioteca);
++
++Boolean resultado =(!lluvia && deberes) || biblioteca;
++System.out.println(resultado);
++	sc.close();
++	}
++
++	
++}
+diff --git a/U1EjerciciosParte1/src/ejercicio14/Ej14.java b/U1EjerciciosParte1/src/ejercicio14/Ej14.java
+new file mode 100644
+index 0000000..77e92cd
+--- /dev/null
++++ b/U1EjerciciosParte1/src/ejercicio14/Ej14.java
+@@ -0,0 +1,31 @@
++package ejercicio14;
++
++import java.util.Scanner;
++public class Ej14 {
++public static void main(String[] args) {
++	
++	Scanner sc = new Scanner(System.in);
++	
++	System.out.println("Introduce las notas del 1º trimestre: ");
++double nota1 = sc.nextDouble();	
++	
++System.out.println("Introduce las notas del 2º trimestre: ");
++double nota2 = sc.nextDouble();	
++
++System.out.println("Introduce las notas del 3º trimestre: ");
++double nota3 = sc.nextDouble();	
++	
++int entero = (int)(nota1 + nota2 + nota3) / 3;
++
++System.out.println("La media del curso en el boletín da: " + entero);
++
++double decimal = (nota1 + nota2 + nota3) / 3; Math.round((decimal*100)/100);
++
++System.out.println("La media en el expediento académico da:" + decimal);
++	sc.close();
++	
++	}
++	
++	
++	
++}
+diff --git a/U1EjerciciosParte1/src/ejercicio15/Ej15.java b/U1EjerciciosParte1/src/ejercicio15/Ej15.java
+new file mode 100644
+index 0000000..b8aa945
+--- /dev/null
++++ b/U1EjerciciosParte1/src/ejercicio15/Ej15.java
+@@ -0,0 +1,25 @@
++package ejercicio15;
++
++import java.util.Scanner;
++
++public class Ej15 {
++public static void main(String[] args) {
++	Scanner sc = new Scanner(System.in);
++	
++	double IVA = 21.0;
++	
++	System.out.println("Introduce un precio: ");
++	double precio = sc.nextDouble();
++	
++	double resultado = precio * (IVA/100);
++	double final1 = precio + resultado; 
++	
++	final1=Math.round(final1 * 100.0) / 100.0;
++	
++	System.out.println("El valor introducido con IVA aplicado será: " + final1 + " €");
++	sc.close();
++}
++	
++	
++	
++}
+diff --git a/U1EjerciciosParte1/src/ejercicio2/Ej2.java b/U1EjerciciosParte1/src/ejercicio2/Ej2.java
+new file mode 100644
+index 0000000..f3abf8e
+--- /dev/null
++++ b/U1EjerciciosParte1/src/ejercicio2/Ej2.java
+@@ -0,0 +1,21 @@
++package ejercicio2;
++
++	import java.util.Scanner;
++
++public class Ej2 {
++
++
++		public static void main(String[] args) {
++			
++			int edad;
++			Scanner sc = new Scanner(System.in);
++				
++			System.err.println("Introduce tu edad: ");
++			
++			 edad = sc.nextInt();
++			
++			 System.err.println("Tu edad será " + (edad + 1) + " el año próximo.");
++		}
++
++
++}
+diff --git a/U1EjerciciosParte1/src/ejercicio3/Ej3.java b/U1EjerciciosParte1/src/ejercicio3/Ej3.java
+new file mode 100644
+index 0000000..34267c5
+--- /dev/null
++++ b/U1EjerciciosParte1/src/ejercicio3/Ej3.java
+@@ -0,0 +1,31 @@
++package ejercicio3;
++
++import java.util.Scanner;
++
++public class Ej3 {
++	public static void main(String[] args) {
++	
++	
++	Scanner reader=new Scanner(System.in);
++	
++	int numero;
++	System.err.println("Introduce el año actual: ");
++	
++	numero = reader.nextInt();
++
++	int numero2;
++	System.err.println("Introduce tu año de nacimiento: ");
++	
++	numero2= reader.nextInt();
++
++	
++	 System.err.println("Actualmente tienes " + (numero - numero2) + " año.");
++
++	
++	reader.close();
++	
++	}
++	
++	
++
++}
+diff --git a/U1EjerciciosParte1/src/ejercicio4/Ej4.java b/U1EjerciciosParte1/src/ejercicio4/Ej4.java
+new file mode 100644
+index 0000000..8ef38c2
+--- /dev/null
++++ b/U1EjerciciosParte1/src/ejercicio4/Ej4.java
+@@ -0,0 +1,29 @@
++package ejercicio4;
++
++import java.util.Scanner;
++
++public class Ej4 {
++public static void main(String[] args) {
++	Scanner reader = new Scanner(System.in);
++	
++	
++		int nota1;
++	System.err.println("Introduce la primera nota: ");
++	
++	nota1 = reader.nextInt();
++	
++	
++		int nota2;
++	System.err.println("Introduce la segunda nota: ");
++	
++	nota2 = reader.nextInt();	
++	
++	double media = (nota1 + nota2) / 2.0;
++	 System.err.println("Tienes una media de: " + media );
++
++	
++	reader.close();
++	
++		}
++
++}
+diff --git a/U1EjerciciosParte1/src/ejercicio5/Ej5.java b/U1EjerciciosParte1/src/ejercicio5/Ej5.java
+new file mode 100644
+index 0000000..d2e341b
+--- /dev/null
++++ b/U1EjerciciosParte1/src/ejercicio5/Ej5.java
+@@ -0,0 +1,33 @@
++package ejercicio5;
++
++import java.util.Scanner;
++
++public class Ej5 {
++	public static void main(String[] args) {
++	
++		Scanner reader = new Scanner(System.in);
++		
++	double radio;
++	
++	double longitud;
++	
++	double area;
++		
++		System.err.println("Introduce el radio: ");
++		
++   radio = reader.nextDouble();
++   
++   longitud = 2*Math.PI*radio;
++   
++   area = Math.PI * (radio*radio);
++   
++  
++		System.err.println("El área de la circunferencia es: " + area + (" y su longitud es: " + longitud));
++		
++		
++		
++		
++			   reader.close();
++	}
++
++}
+diff --git a/U1EjerciciosParte1/src/ejercicio6/Ej6.java b/U1EjerciciosParte1/src/ejercicio6/Ej6.java
+new file mode 100644
+index 0000000..7c83f38
+--- /dev/null
++++ b/U1EjerciciosParte1/src/ejercicio6/Ej6.java
+@@ -0,0 +1,36 @@
++package ejercicio6;
++
++import java.util.Scanner;
++
++public class Ej6 {
++	
++	public static void main(String[] args) {
++		Scanner sc = new Scanner(System.in);
++		System.err.println("Introduce el primer número: ");
++		
++		int num1 = sc.nextInt();
++		
++		System.err.println("Introduce el segundo número: ");
++	
++		int num2 = sc.nextInt();
++		
++		int respuesta1 = num1 + num2;
++		int respuesta2 = num1 - num2;
++		int respuesta3 = num1 * num2;
++		
++		System.out.println(num1 + "+" + num2 + "=");
++		System.out.println(respuesta1);
++		
++		System.out.println(num1 + "-" + num2 + "=");
++		System.out.println(respuesta2);
++		
++		System.out.println(num1 + "*" + num2 + "=");
++		System.out.println(respuesta3);
++		sc.close();
++		
++	}
++	
++	
++	
++
++}
+diff --git a/U1EjerciciosParte1/src/ejercicio7/Ej7.java b/U1EjerciciosParte1/src/ejercicio7/Ej7.java
+new file mode 100644
+index 0000000..b9db4c4
+--- /dev/null
++++ b/U1EjerciciosParte1/src/ejercicio7/Ej7.java
+@@ -0,0 +1,37 @@
++package ejercicio7;
++
++import java.util.Scanner;
++
++public class Ej7 {
++	
++	public static void main(String[] args) {
++		Scanner sc = new Scanner(System.in);
++		System.err.println("Introduce tus datos:");
++		 
++		String nom;
++		String dir;
++		String tel;
++		
++	System.err.print("Nombre: ");
++	
++			nom = sc.next();
++		
++	System.err.print("Dirrección: ");
++	
++			dir = sc.next();
++			
++	System.err.print("Teléfono: ");
++		
++
++			tel = sc.next();
++		
++		
++	
++		sc.close();
++		
++	}
++	
++	
++	
++
++}
+diff --git a/U1EjerciciosParte1/src/ejercicio8/Ej8.java b/U1EjerciciosParte1/src/ejercicio8/Ej8.java
+new file mode 100644
+index 0000000..16322da
+--- /dev/null
++++ b/U1EjerciciosParte1/src/ejercicio8/Ej8.java
+@@ -0,0 +1,27 @@
++package ejercicio8;
++
++import java.util.Scanner;
++
++public class Ej8 {
++	
++	public static void main(String[] args) {
++		
++		Scanner sc=new Scanner(System.in);
++		
++		System.out.println("Introduce tu nombre: ");
++			String nombre;
++		nombre = sc.next();
++		System.out.println("Introduce tu edad: ");
++			String edad;
++		edad = sc.next();
++		
++
++		
++		
++		System.out.println("Hola " + nombre + ", tienes " + edad + " años, ¡qué mayor eres!.");
++		
++		sc.close();
++		
++		}
++
++	}
+\ No newline at end of file
+diff --git a/U1EjerciciosParte1/src/ejercicio9/Ej9.java b/U1EjerciciosParte1/src/ejercicio9/Ej9.java
+new file mode 100644
+index 0000000..1f8b6be
+--- /dev/null
++++ b/U1EjerciciosParte1/src/ejercicio9/Ej9.java
+@@ -0,0 +1,21 @@
++package ejercicio9;
++
++import java.util.Scanner;
++
++public class Ej9 {
++	public static void main(String[] args) {
++		Scanner sc = new Scanner(System.in);
++		System.err.println("Dame una edad: ");
++			int x =sc.nextInt();
++		System.err.println("La edad es " + x );
++	Boolean b = x >=18;
++	System.err.println("Mayor de edad: " + b);
++	
++	sc.close();
++}
++	
++	
++	
++	
++	 
++}
